@@ -1,5 +1,5 @@
 // Retrieve filter's data
-$.get('http://oxygen.ws/api.php?getalldata=1', data => {
+$.get('http://54.161.202.123/api.php?getalldata=1', data => {
     Object.keys(data).forEach(item => {
         const options = data[item].reduce((html, opt) => `${html}<option value="${opt}">${opt}</option>`, '<option value="">--</option>');
         $(`form[action="filter"] [name="${item.toLowerCase()}"]`).html(options).prop('disabled', false);
@@ -27,7 +27,7 @@ const form_search = (curr_page = 1) => {
     table_refresh(table_content);
     $.ajax({
         type: 'GET',
-        url: `http://oxygen.ws/api.php?page=${curr_page}`,
+        url: `http://54.161.202.123/api.php?page=${curr_page}`,
         contentType: 'application/json; charset=UTF-8',
         dataType: 'json',
         data: $(form).serialize(),

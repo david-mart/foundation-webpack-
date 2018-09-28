@@ -3,3 +3,4 @@ node_modules
 .DS_Store
 build\.zip
 src/assets/docs/
+dist

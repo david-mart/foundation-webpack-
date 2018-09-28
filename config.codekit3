@@ -15,7 +15,7 @@
 		"uuidString": "F1EFA6C6-105C-418D-BECE-C2E49FE54D13"
 		}
 	],
-"creatorBuild": "28815",
+"creatorBuild": "28841",
 "files": {
 	"/.babelrc": {
 		"cB": 0,
@@ -4446,7 +4446,7 @@
 		},
 	"/src/js/app.js": {
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/build/js/app.min.js",

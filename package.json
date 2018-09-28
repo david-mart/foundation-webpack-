@@ -4,7 +4,8 @@
   "description": "Quick start with Zurb Foundation in Codekit",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --watch --mode development",
+    "prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -23,10 +24,28 @@
     "foundation-sites": "^6.4.4-rc1",
     "motion-ui": "^2.0.3",
     "owl.carousel": "^2.3.4",
-    "shufflejs": "^5.2.0"
+    "shufflejs": "^5.2.0",
+    "util": "^0.11.0"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
     "eslint": "^4.19.1",
-    "eslint-plugin-jquery": "^1.3.2"
-  }
+    "eslint-plugin-jquery": "^1.3.2",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "pug-html-loader": "^1.1.5",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": []
 }
